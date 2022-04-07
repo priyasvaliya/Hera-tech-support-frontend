@@ -25,7 +25,7 @@ function OrderRequestPage() {
         console.log(orderDesc);
         console.log(orderDate);
         console.log("Clicked");
-        axios.post(`https://hire-tech-support-backend.herokuapp.com//order`, {
+        axios.post(`https://hire-tech-support-backend.herokuapp.com/order`, {
             custID: state.customer.id,
             techID: state.technician.techID,
             orderDesc: orderDesc,

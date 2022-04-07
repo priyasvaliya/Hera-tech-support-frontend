@@ -11,7 +11,7 @@ function OrderHistory() {
     const [searchedOrders, setSearchedOrders] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/technician/orderhistory/${id}`)
+        axios.get(`https://hire-tech-support-backend.herokuapp.com/technician/orderhistory/${id}`)
             .then(res => {
                 console.log(res.data);
                 setOrders(res.data);
