@@ -25,7 +25,7 @@ function LoginPage() {
 			setEmpty(true);
 		}
 		console.log(info);
-		axios.post("http://localhost:8080/login", info)
+		axios.post("https://hire-tech-support-backend.herokuapp.com/login", info)
 			.then((response) => {
 				setPasswordVerify(response.data!=null);
 				if (identity === '0' && response.data!=null) {

@@ -20,7 +20,7 @@ function RegisterPage() {
 	function addCustomer(e) {
 		e.preventDefault();
 		const customer = {identity, userName, firstName, lastName, payment, address, password};
-		axios.post("http://localhost:8080/register", customer)
+		axios.post("https://hire-tech-support-backend.herokuapp.com/register", customer)
 			.then((response) => {
 				console.log(response.data);
 			})

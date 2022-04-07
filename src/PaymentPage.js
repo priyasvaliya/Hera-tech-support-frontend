@@ -12,14 +12,14 @@ function PaymentPage() {
     const [success, setSuccess] = useState(false);
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/order/${id}`)
+        axios.get(`https://hire-tech-support-backend.herokuapp.com/order/${id}`)
             .then(res => {
                 setOrder(res.data);
             })
     }, []);
 
     function handleSubmit() {
-        axios.post(`http://localhost:8080/order/${id}`)
+        axios.post(`https://hire-tech-support-backend.herokuapp.com/order/${id}`)
             .then(res => {
                 setSuccess(true);
             })

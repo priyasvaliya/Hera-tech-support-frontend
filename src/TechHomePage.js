@@ -13,7 +13,7 @@ function TechHomePage() {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/technician/orders/${technician.id}`)
+        axios.get(`https://hire-tech-support-backend.herokuapp.com/technician/orders/${technician.id}`)
             .then(res => {
                 console.log(res.data);
                 setOrders(res.data);
@@ -22,7 +22,7 @@ function TechHomePage() {
 
 
     const handleClick = (id) => {
-        axios.post(`http://localhost:8080/order/complete/${id}`)
+        axios.post(`https://hire-tech-support-backend.herokuapp.com/order/complete/${id}`)
             .then(res => {
                 setSuccess(true);
             })

@@ -13,13 +13,13 @@ function CustomerHomePage() {
     const [searchedTechnicians, setSearchedTechnicians] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/technician")
+        axios.get("https://hire-tech-support-backend.herokuapp.com/technician")
             .then(res => {
                 console.log(res.data);
                 setTechnicianList(res.data);
                 setSearchedTechnicians(res.data);
             });
-        axios.get(`http://localhost:8080/login/${customerId}`)
+        axios.get(`https://hire-tech-support-backend.herokuapp.com/login/${customerId}`)
             .then(res => {
                 console.log(res.data);
                 setCustomer(res.data);
