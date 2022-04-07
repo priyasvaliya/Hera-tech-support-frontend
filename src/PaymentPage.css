@@ -1,0 +1,23 @@
+.payment-card {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background-color: "#f0efeb";
+}
+
+.payment-image {
+    height: 75px;
+    width: 250px;
+}
+
+.secure-icon {
+    height: 200px;
+}
+
+.form-label {
+    font-size: 20px !important;
+}
+
+.form-control {
+    font-size: 20px !important;
+    padding: 0px;
+    height: 40px;
+}

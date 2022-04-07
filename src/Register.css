@@ -1,0 +1,61 @@
+.Register {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.Register-header {
+	height: 50px;
+	flex-direction: column;
+	align-items: center;
+  	justify-content: center;
+	font-size: 35px;
+}
+
+.Register-logo {
+	height: 120px;
+	margin: 10px;
+	pointer-events: none;
+}
+
+.Register1 {
+  	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+
+.input {
+	height: 30px;
+	border-width: 1px;
+	border-color: black;
+	background-color: white;
+}
+
+.radio {
+	margin-right: 8px;
+	height: 17px;
+	width: 17px;
+}
+
+.Register-link {
+	color: #1553A5;
+	margin: 7px;
+	cursor: pointer;
+}
+
+.Register-body {
+	background: #f0efeb;
+	margin-left: 270px;
+  	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-color: #193A12;
+	border-width: 1px;
+	border-radius: 4px;
+	height: 650px;
+	width: 900px;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
